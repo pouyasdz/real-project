@@ -30,6 +30,12 @@ body{
 .navbar ul li{
     font-weight: 800;
     color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.navbar ul li:hover{
+    border-bottom: 1px solid white;
 }
 
 .container{
