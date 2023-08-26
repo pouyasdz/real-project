@@ -41,10 +41,11 @@ ul{
     color: white;
     cursor: pointer;
     padding: 10px;
+    border-bottom: 2px solid #ffffff00;
 }
 
 .navbar ul li:hover{
-    border-bottom: 1px solid white;
+    border-bottom: 2px solid white;
 }
 
 .container{
@@ -85,6 +86,10 @@ ul{
     height: 600px;
     object-fit: contain;
     mix-blend-mode: multiply;
+    image-rendering: -webkit-optimize-contrast;
+}
+
+.animation-img{
     animation:spin 30s linear infinite;
 }
 
@@ -99,12 +104,37 @@ ul{
 
 .container .detail .description{
     line-height: 1.5;
+    color: rgb(81, 81, 81);
+    font-size: 18px;
 }
 .side-bar{
     width: 15%;
     height: 100vh;
     background-color: rgb(231, 231, 231);
     padding: 15px;
+}
+
+.side-bar ul{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 20px;
+}
+
+.side-bar li{
+    width: 100%;
+    height: auto;
+    padding: 13px;
+    display: flex;
+    justify-content: center;
+    background-color: #ffa600;
+    transition: background-color 0.5s;
+    cursor: pointer;
+    border-radius: 12px;
+}
+
+.side-bar li:hover{
+    background-color: #00ff99;
 }
 
 @keyframes spin { 
