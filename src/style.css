@@ -14,6 +14,15 @@ body{
     flex-direction: column;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+ul{
+    list-style: none;
+}
+
 .navbar, .navbar ul{
     width: 100%;
     height: 60px;
@@ -51,8 +60,14 @@ body{
     background-color: rgb(16, 16, 16);
     color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-evenly;
+    padding: 15px;
+}
+
+.footer div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 .content{
