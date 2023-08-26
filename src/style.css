@@ -77,11 +77,39 @@ ul{
     height: 100vh;
     background-color: rgb(231, 231, 231);
     padding: 15px;
+    display: flex;
 }
 
+.content img{
+    width: 50%px;
+    height: 600px;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+    animation:spin 30s linear infinite;
+}
+
+.content .detail{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+}
+
+.container .detail .description{
+    line-height: 1.5;
+}
 .side-bar{
     width: 15%;
     height: 100vh;
     background-color: rgb(231, 231, 231);
     padding: 15px;
+}
+
+@keyframes spin { 
+    100% { 
+        -webkit-transform: rotate(360deg); 
+        transform:rotate(360deg); 
+    } 
 }
