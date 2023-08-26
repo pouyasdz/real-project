@@ -52,6 +52,8 @@ ul{
     min-height: 100vh;
     padding-left: 30px;
     padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
 }
 
 .footer{
@@ -71,7 +73,14 @@ ul{
 }
 
 .content{
-    width: 100%;
+    width: 80%;
+    height: 100vh;
+    background-color: rgb(231, 231, 231);
+    padding: 15px;
+}
+
+.side-bar{
+    width: 15%;
     height: 100vh;
     background-color: rgb(231, 231, 231);
     padding: 15px;
